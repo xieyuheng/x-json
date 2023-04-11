@@ -1,7 +1,7 @@
 {
-  "name": "@xieyuheng/x-node",
-  "version": "0.0.6",
-  "repository": "github:xieyuheng/x-node",
+  "name": "@xieyuheng/x-schema",
+  "version": "0.0.1",
+  "repository": "github:xieyuheng/x-schema",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -24,8 +24,6 @@
     "vite": "^4.2.1",
     "vitest": "^0.29.8"
   },
-  "dependencies": {
-    "@rgrove/parse-xml": "^4.1.0"
-  },
+  "dependencies": {},
   "license": "GPL-3.0-or-later"
 }
