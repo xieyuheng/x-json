@@ -7,13 +7,13 @@ date: 2023-04-06
 We need to use json to describe schema of json data.
 
 We can not use [json-schema](https://json-schema.org/understanding-json-schema/index.html),
-because instead of the following:
+because instead of writing:
 
 ```
 {
   "type": "object",
   "properties": {
-    "age": { "type": "number" },
+    "year": { "type": "number" },
     "name": { "type": "string" }
   }
 }
@@ -24,7 +24,7 @@ We want to write something like:
 ```
 {
   "name": "string",
-  "age": "number"
+  "year": "number"
 }
 ```
 
@@ -43,7 +43,7 @@ For example:
 ```
 {
   "name": "string",
-  "age": "number"
+  "year": "number"
 }
 
 // =>
@@ -52,7 +52,7 @@ For example:
   "@type": "object",
   properties: {
     "name": { "@type": "string" },
-    "age": { "@type": "number" }
+    "year": { "@type": "number" }
   }
 }
 ```

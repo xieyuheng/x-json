@@ -2,6 +2,27 @@
 
 A runtime schema for JSON data, where the syntax is optimized for most used use cases.
 
+Instead of writing (like in [json-schema](https://json-schema.org/understanding-json-schema/index.html)):
+
+```
+{
+  "type": "object",
+  "properties": {
+    "year": { "type": "number" },
+    "name": { "type": "string" }
+  }
+}
+```
+
+I want to write:
+
+```
+{
+  "name": "string",
+  "year": "number"
+}
+```
+
 ## Install
 
 ```bash
