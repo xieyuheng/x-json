@@ -1,10 +1,10 @@
 # X Schema
 
-A runtime schema for JSON data, where the syntax is optimized for most used use cases.
+A runtime schema for JSON data, where the syntax is optimized for _the most used use cases_.
 
 Instead of writing (like in [json-schema](https://json-schema.org/understanding-json-schema/index.html)):
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -16,7 +16,7 @@ Instead of writing (like in [json-schema](https://json-schema.org/understanding-
 
 I want to write:
 
-```
+```json
 {
   "name": "string",
   "year": "number"
