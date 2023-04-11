@@ -1,11 +1,11 @@
-# X Node
+# X Schema
 
-A stable XML AST to protect myself from switching upstream parser and upstream API changes.
+A runtime schema for JSON data, where the syntax is optimized for most used use cases.
 
 ## Install
 
 ```bash
-npm i @xieyuheng/x-node
+npm i @xieyuheng/x-schema
 ```
 
 ## Contributions
