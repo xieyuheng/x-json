@@ -34,8 +34,8 @@ We are interpreter writers right?
 
 Maybe we can view a string as a variable name,
 and structurally evaluate every properties that does not starts with `@`,
-specially we will use `@type` and `@kind` properties to denote type name and sum types,
-and the evaluation of object without `@type` or `@kind` property is special,
+specially we will use `@type` properties to denote type name,
+and the evaluation of object without `@type` property is special,
 i.e. not just structural down, but also wrap it inside `{ "@type": "object", ... }`.
 
 For example:
@@ -50,7 +50,7 @@ For example:
 
 {
   "@type": "object",
-  properties: {
+  "@properties": {
     "name": { "@type": "string" },
     "year": { "@type": "number" }
   }
@@ -60,16 +60,16 @@ For example:
 ```
 {
   "@type": "string",
-  "minLength": 2,
-  "maxLength": 3
+  "@minLength": 2,
+  "@maxLength": 3
 }
 
 // =>
 
 {
   "@type": "string",
-  "minLength": { "@kind": "Literal', "@value": 2 },
-  "maxLength": { "@kind": "Literal', "@value": 3 }
+  "@minLength": 2,
+  "@maxLength": 3
 }
 ```
 
