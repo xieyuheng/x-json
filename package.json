@@ -15,11 +15,11 @@
     "test": "npm run test:ts"
   },
   "devDependencies": {
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.3",
     "prettier-plugin-organize-imports": "^3.2.3",
-    "typescript": "^5.1.6",
-    "vite": "^4.4.4",
-    "vitest": "^0.33.0"
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.4"
   },
   "dependencies": {},
   "license": "GPL-3.0-or-later"
