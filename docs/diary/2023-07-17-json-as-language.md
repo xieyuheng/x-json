@@ -1,5 +1,5 @@
 ---
-title: Lexical scope
+title: JSON as language
 author: Xie Yuheng
 date: 2023-07-17
 ---
@@ -52,3 +52,10 @@ We also need to support abstraction over schema and value.
 
 This is absurd, because we could just implement
 a new dependently typed language.
+
+```
+datatype Tree(T: Type) {
+  Node(leaf: Tree(T), right: Tree(T)): Tree(T)
+  Leaf(value: T): Tree(T)
+}
+```
