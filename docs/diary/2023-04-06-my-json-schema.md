@@ -50,7 +50,7 @@ For example:
 
 {
   "@type": "object",
-  "@properties": {
+  "properties": {
     "name": { "@type": "string" },
     "year": { "@type": "number" }
   }
@@ -60,16 +60,16 @@ For example:
 ```
 {
   "@type": "string",
-  "@minLength": 2,
-  "@maxLength": 3
+  "minLength": 2,
+  "maxLength": 3
 }
 
 // =>
 
 {
   "@type": "string",
-  "@minLength": 2,
-  "@maxLength": 3
+  "minLength": 2,
+  "maxLength": 3
 }
 ```
 
